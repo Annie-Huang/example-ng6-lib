@@ -8,6 +8,10 @@ D:\Temp\Test\example-ng6-lib>ng build example-ng6-lib
 D:\Temp\Test\example-ng6-lib>ng generate component foo --project=example-ng6-lib
 D:\Temp\Test\example-ng6-lib>ng build example-ng6-lib --watch
 
+build_lib: build the dist folder:
+npm_pack: create the D:\Temp\Test\example-ng6-lib\dist\example-ng6-lib\example-ng6-lib-0.0.1.tgz
+package: do the two above commands in sequence.
+
 ==================
 
 D:\Temp\Test\example-ng6-lib>ng generate library example-ng6-lib --prefix=enl
