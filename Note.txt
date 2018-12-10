@@ -3,6 +3,8 @@ https://github.com/t-palmer/example-ng6-lib
 
 D:\Temp\Test\example-ng6-lib>ng generate library example-ng6-lib --prefix=enl
 D:\Temp\Test\example-ng6-lib>ng build example-ng6-lib
+D:\Temp\Test\example-ng6-lib>ng generate component foo --project=example-ng6-lib
+D:\Temp\Test\example-ng6-lib>ng build example-ng6-lib --watch
 
 ==================
 
@@ -44,3 +46,12 @@ Built example-ng6-lib
 Built Angular Package!
  - from: D:\Temp\Test\example-ng6-lib\projects\example-ng6-lib
  - to:   D:\Temp\Test\example-ng6-lib\dist\example-ng6-lib
+
+------------------
+
+D:\Temp\Test\example-ng6-lib>ng generate component foo --project=example-ng6-lib
+CREATE projects/example-ng6-lib/src/lib/foo/foo.component.html (22 bytes)
+CREATE projects/example-ng6-lib/src/lib/foo/foo.component.spec.ts (607 bytes)
+CREATE projects/example-ng6-lib/src/lib/foo/foo.component.ts (257 bytes)
+CREATE projects/example-ng6-lib/src/lib/foo/foo.component.css (0 bytes)
+UPDATE projects/example-ng6-lib/src/lib/example-ng6-lib.module.ts (327 bytes)
