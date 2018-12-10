@@ -1,5 +1,7 @@
 https://blog.angularindepth.com/creating-a-library-in-angular-6-87799552e7e5
 https://github.com/t-palmer/example-ng6-lib
+https://blog.angularindepth.com/creating-a-library-in-angular-6-part-2-6e2bc1e14121
+
 
 D:\Temp\Test\example-ng6-lib>ng generate library example-ng6-lib --prefix=enl
 D:\Temp\Test\example-ng6-lib>ng build example-ng6-lib
