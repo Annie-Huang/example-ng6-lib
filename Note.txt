@@ -12,6 +12,9 @@ build_lib: build the dist folder:
 npm_pack: create the D:\Temp\Test\example-ng6-lib\dist\example-ng6-lib\example-ng6-lib-0.0.1.tgz
 package: do the two above commands in sequence.
 
+Test it with my-angular-app (test-example-ng6-lib branch),
+D:\Temp\my-angular-app>npm install ..\Test\example-ng6-lib\dist\example-ng6-lib\example-ng6-lib-0.0.1.tgz
+
 ==================
 
 D:\Temp\Test\example-ng6-lib>ng generate library example-ng6-lib --prefix=enl
@@ -61,3 +64,17 @@ CREATE projects/example-ng6-lib/src/lib/foo/foo.component.spec.ts (607 bytes)
 CREATE projects/example-ng6-lib/src/lib/foo/foo.component.ts (257 bytes)
 CREATE projects/example-ng6-lib/src/lib/foo/foo.component.css (0 bytes)
 UPDATE projects/example-ng6-lib/src/lib/example-ng6-lib.module.ts (327 bytes)
+
+-----------------
+
+D:\Temp\my-angular-app>npm install ..\Test\example-ng6-lib\dist\example-ng6-lib\example-ng6-lib-0.0.1.tgz
+npm WARN rollback Rolling back node-pre-gyp@0.10.0 failed (this is probably harmless): EPERM: operation not permitted, rmdir 'D:\Temp\my-angular-app\node_modules\fsevents\node_modules'
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ example-ng6-lib@0.0.1
+added 1 package, removed 1 package and audited 39135 packages in 23.104s
+found 0 vulnerabilities
+
+Note: The line to be added:
+"example-ng6-lib": "file:../Test/example-ng6-lib/dist/example-ng6-lib/example-ng6-lib-0.0.1.tgz",
