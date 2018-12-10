@@ -1,6 +1,13 @@
 {
   "name": "example-ng6-lib-app",
   "version": "0.0.0",
+  "description": "Angular 7 Library example",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t-palmer/example-ng6-lib.git"
+  },
+  "author": "Todd Palmer",
+  "license": "ISC",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,9 +15,13 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "test_lib": "ng test example-ng6-lib",
     "build_lib": "ng build example-ng6-lib",
+    "copy-license": "copy .\\LICENSE .\\dist\\example-ng6-lib",
+    "copy-readme": "copy .\\README.md .\\dist\\example-ng6-lib",
+    "copy-files": "npm run copy-license && npm run copy-readme",
     "npm_pack": "cd dist/example-ng6-lib && npm pack",
-    "package": "npm run build_lib && npm run npm_pack"
+    "package": "npm run build_lib && npm run copy-files && npm run npm_pack"
   },
   "private": true,
   "dependencies": {

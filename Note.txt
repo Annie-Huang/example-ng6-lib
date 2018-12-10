@@ -1,7 +1,7 @@
 https://blog.angularindepth.com/creating-a-library-in-angular-6-87799552e7e5
 https://github.com/t-palmer/example-ng6-lib
 https://blog.angularindepth.com/creating-a-library-in-angular-6-part-2-6e2bc1e14121
-
+https://blog.angularindepth.com/the-angular-library-series-publishing-ce24bb673275
 
 D:\Temp\Test\example-ng6-lib>ng generate library example-ng6-lib --prefix=enl
 D:\Temp\Test\example-ng6-lib>ng build example-ng6-lib
@@ -15,6 +15,14 @@ package: do the two above commands in sequence.
 Test it with my-angular-app (test-example-ng6-lib branch),
 D:\Temp\my-angular-app>npm install ..\Test\example-ng6-lib\dist\example-ng6-lib\example-ng6-lib-0.0.1.tgz
 
+Check if your library’s intended name is ng-library-x, you would check this URL:
+  https://www.npmjs.com/package/ng-library-x
+
+To publish to npm (e.g. publish a package called ng-example-library, not this example-ng6-lib package):
+npm login
+npm whoami
+npm publish ./dist/ng-example-library/ng-example-library-1.2.0.tgz
+Then we can see the published package on npm at this URL: https://www.npmjs.com/package/ng-example-library
 ==================
 
 D:\Temp\Test\example-ng6-lib>ng generate library example-ng6-lib --prefix=enl
