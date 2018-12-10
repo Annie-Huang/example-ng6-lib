@@ -1,0 +1,34 @@
+https://blog.angularindepth.com/creating-a-library-in-angular-6-87799552e7e5
+https://github.com/t-palmer/example-ng6-lib
+
+==================
+
+D:\Temp\Test\example-ng6-lib>ng generate library example-ng6-lib --prefix=enl
+CREATE projects/example-ng6-lib/karma.conf.js (968 bytes)
+CREATE projects/example-ng6-lib/ng-package.json (164 bytes)
+CREATE projects/example-ng6-lib/package.json (145 bytes)
+CREATE projects/example-ng6-lib/tsconfig.lib.json (726 bytes)
+CREATE projects/example-ng6-lib/tsconfig.spec.json (246 bytes)
+CREATE projects/example-ng6-lib/tslint.json (247 bytes)
+CREATE projects/example-ng6-lib/src/test.ts (700 bytes)
+CREATE projects/example-ng6-lib/src/public_api.ts (191 bytes)
+CREATE projects/example-ng6-lib/src/lib/example-ng6-lib.module.ts (261 bytes)
+CREATE projects/example-ng6-lib/src/lib/example-ng6-lib.component.spec.ts (679 bytes)
+CREATE projects/example-ng6-lib/src/lib/example-ng6-lib.component.ts (281 bytes)
+CREATE projects/example-ng6-lib/src/lib/example-ng6-lib.service.spec.ts (370 bytes)
+CREATE projects/example-ng6-lib/src/lib/example-ng6-lib.service.ts (142 bytes)
+UPDATE angular.json (5041 bytes)
+UPDATE package.json (1455 bytes)
+UPDATE tsconfig.json (566 bytes)
+
+> ng-packagr@4.4.5 postinstall D:\Temp\Test\example-ng6-lib\node_modules\ng-packagr
+> opencollective postinstall
+
+
+     *** Thank you for using ng-packagr! ***
+
+Please consider donating to our open collective
+     to help us maintain this package.
+
+  https://opencollective.com/ng-packagr/donate
+
